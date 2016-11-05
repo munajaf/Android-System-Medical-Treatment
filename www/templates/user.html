@@ -1,0 +1,43 @@
+<ion-view title="{{userdata1.nama}}" id="page8">
+    <ion-content padding="true" class="has-header">
+        <div>
+            <img src="img/noavatar_1418273249.jpg" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 300px; height: 47px;"></div>
+        <div id="user-button-bar1" class="button-bar">
+            <a ui-sref="sejarah" id="user-button12" class="button button-energized  button-block">SEJARAH</a>
+            <a ui-sref="rawatanAkupunktur" id="user-button14" class="button button-balanced  button-block">RAWATAN</a>
+        </div>
+        <ion-list id="user-list5">
+            <ion-item class="calm" id="user-list-item4">NAMA
+                <span class="item-note">{{userdata1.nama}}</span>
+            </ion-item>
+            <ion-item class="calm" id="user-list-item5">JANTINA
+                <span class="item-note">{{userdata1.jantina1}}</span>
+            </ion-item>
+            <ion-item class="calm" id="user-list-item6">KAD PENGENALAN
+                <span class="item-note">{{userdata1.kp}}</span>
+            </ion-item>
+            <ion-item class="calm" id="user-list-item7">TARIKH LAHIR
+                <span class="item-note">{{userdata1.tl}}</span>
+            </ion-item>
+            <ion-item class="calm" id="user-list-item14">TARAF PERKAHWINAN
+                <span class="item-note">{{userdata1.tp}}</span>
+            </ion-item>
+            <ion-item class="calm" id="user-list-item15" >NO TELEFON
+                <span class="item-note">{{userdata1.notelefon}}</span>
+            </ion-item>
+            <ion-item class="calm" id="user-list-item16" >PEKERJAAN
+                <span class="item-note">{{userdata1.pekerjaan}}</span>
+            </ion-item>
+            <div class="item item-body" id="user-list-item-container2">
+                <div id="user-markdown5" style="margin-top:0px;color:#000000;">
+                    <p>{{userdata1.alamat}}</p>
+                </div>
+            </div>
+        </ion-list>
+        <div id="user-container5">
+            <a ui-sref="kemaskinipesakit" id="user-button19" class="button button-positive  button-block">Kemaskini Maklumat</a>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,43 @@
+<!-- Header -->
+<div class="bar bar-header bar-light">
+
+    <button class="button icon-left ion-chevron-left button-clear button-dark">Back</button>
+
+    <h1 class="title">Signup</h1>
+</div>
+
+<!-- Space between header and signup form -->
+<div class="spacer" style="width: 300px; height: 50px;"></div>
+
+
+<div class="list list-inset">
+
+    <!-- Signup form text fields -->
+    <form>
+
+        <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="email" ng-model="formData.email">
+        </label>
+
+
+
+        <label class="item item-input">
+            <span class="input-label">Username</span>
+            <input type="text">
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password">
+        </label>
+
+        <!-- Submit button for signup form -->
+        <button on-touch="onTouch()" class="button button-positive button-block">
+            Sign up
+        </button>
+
+    </form>
+</div>
+
+{{formData.email}}

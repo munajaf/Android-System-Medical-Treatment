@@ -1,0 +1,37 @@
+<ion-view title="Semua Pesakit ({{length}})"  id="page7" style="background-color:#404040;">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="listAll-list4">
+           <!-- <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item3" ui-sref="user">
+                <h2positive>Ammar Munajaf Bin Abd Moin
+                    <p style="white-space:normal;">960925146641 (20)</p>
+                    <i class="icon ion-android-add"></i>
+                </h2positive>
+            </ion-item>
+            <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item11">
+                <h2positive>Amirullah Bin Razaman
+                    <p style="white-space:normal;">961009106753 (20)</p>
+                    <i class="icon ion-android-add"></i>
+                </h2positive>
+            </ion-item>
+            <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item12">
+                <h2positive>Fairuz Binti Mohd Hashim
+                    <p style="white-space:normal;">960906086006 (20)</p>
+                    <i class="icon ion-android-add"></i>
+                </h2positive>
+            </ion-item>
+            <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item13">
+                <h2positive>Imran Saufiq Bin Khalid
+                    <p style="white-space:normal;">960518086006 (20)</p>
+                    <i class="icon ion-android-add"></i>
+                </h2positive>
+            </ion-item> -->
+
+            <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item11" ng-repeat="x in result" ng-click="go(x)">
+                <h2positive>{{x.nama}}
+                    <p style="white-space:normal;">{{x.kp}} ({{x.age}})</p>
+                    <i class="icon ion-android-add"></i>
+                </h2positive>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

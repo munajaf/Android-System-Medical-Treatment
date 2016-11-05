@@ -1,0 +1,24 @@
+<ion-view title="Log Masuk" id="page4">
+    <ion-content padding="true" class="has-header">
+        <form id="logMasuk-form3" class="list">
+            <div id="logMasuk-container3">
+                <div>
+                    <img src="img/Total-logo-earth-880x660.png" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+                </div>
+            </div>
+            <ion-list id="logMasuk-list2">
+                <label class="item item-input" id="logMasuk-input3">
+                    <span class="input-label">Username</span>
+                    <input ng-model="data.email" type="text" placeholder="Username" value="admin">
+                </label>
+                <label class="item item-input" id="logMasuk-input4">
+                    <span class="input-label">Password</span>
+                    <input ng-model="data.password" type="password" placeholder="Password" value="admin">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a go id="logMasuk-button6" class="button button-positive  button-block" ng-click="CheckBurp()">Log Masuk</a>
+            <a ui-sref="hasilkanAkaunBaru" id="logMasuk-button7" class="button button-positive  button-block button-clear">Atau Hasilkan Akaun Baru</a>
+        </form>
+    </ion-content>
+</ion-view>
