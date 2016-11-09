@@ -16,10 +16,9 @@
         <button id="home-button11" class="button button-positive  button-block" ng-click="Search()">Search</button>
         <ion-list id="listAll-list4">
 
-            <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item3" ui-sref="ammarMunajafBinAbdMoin" ng-show="Show" >
-                <h2positive>{{result.Nama}}
-                    <p style="white-space:normal;">{{result.KadPengenalan}}</p>
-                    <p style="hide"
+            <ion-item class="item-avatar item-icon-right positive" id="listAll-list-item3" ui-sref="user" ng-show="Show" ng-repeat="x in result" ng-click="go(x)">
+                <h2positive>{{x.nama}}
+                    <p style="white-space:normal;">{{x.kp}}</p>
                     <i class="icon ion-android-add"></i>
                 </h2positive>
             </ion-item>
